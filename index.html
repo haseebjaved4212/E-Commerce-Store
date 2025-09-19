@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Buddy Shop — Mini E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">Buddy Shop</div>
+    <div class="controls">
+      <select id="categoryFilter" aria-label="Filter products by category"></select>
+      <button id="cartToggle" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Products Grid -->
+    <section id="productsSection">
+      <div id="product-list" class="grid"></div>
+    </section>
+
+    <!-- Product detail (single-page view) -->
+    <section id="productDetailSection" class="hidden">
+      <button id="backToList" class="back-btn">← Back to products</button>
+      <div id="productDetail" class="product-detail"></div>
+    </section>
+  </main>
+
+  <!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button id="closeCheckout" class="close-btn">✕</button>
+      <h2>Checkout</h2>
+      <form id="checkoutForm" class="checkout-form">
+        <label>Full name<input name="name" required /></label>
+        <label>Email<input name="email" type="email" required /></label>
+        <label>Address<textarea name="address" required></textarea></label>
+        <label>Payment
+          <select name="payment">
+            <option>Cash on Delivery</option>
+            <option>Card (mock)</option>
+          </select>
+        </label>
+        <button type="submit" class="checkout-btn">Place Order</button>
+      </form>
+      <div id="orderResult"></div>
+    </div>
+  </div>
+
+  <!-- Cart Sidebar -->
+  <aside id="cart" class="cart-sidebar" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" class="close-btn">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div id="cart-total">Total: Rs.0</div>
+      <button id="openCheckout" class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay hidden"></div>
+
+  <!-- Toast container (for non-blocking notifications) -->
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
