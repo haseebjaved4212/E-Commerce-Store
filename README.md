@@ -1,4 +1,4 @@
-# Buddy Shop — Mini E-Commerce (Single-file frontend)
+# Buddy Shop — Mini E-Commerce
 
 A compact, single-page mini e-commerce demo built with plain HTML, CSS, and JavaScript. This repository is designed as a learning / demo project: it showcases product listing, a cart sidebar, a checkout modal (mock), and non-persistent order flow using browser `localStorage`.
 
