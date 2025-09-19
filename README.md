@@ -4,7 +4,7 @@ A compact, single-page mini e-commerce demo built with plain HTML, CSS, and Java
 
 ## Preview
 
-- [Live Demo]()
+- [Live Demo](https://haseebjaved4212.github.io/E-Commerce-Store/)
 
 ## Features
 
