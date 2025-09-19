@@ -21,7 +21,7 @@ const PRODUCTS = [
     title: "Leather Belt",
     price: 800,
     category: "Accessories",
-    img: "assets/belt1.jpg",
+    img: "assets/Belt1.jpg",
     description: "Durable leather belt with metal buckle.",
   },
   {
